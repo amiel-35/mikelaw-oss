@@ -155,6 +155,14 @@ cd backend
 npm run workflows:validate -- ../workflow-packs
 ```
 
+A dry-run import can preview deterministic database ids and planned import
+actions without writing to the database:
+
+```bash
+cd backend
+npm run workflows:import -- --dry-run ../workflow-packs
+```
+
 A future importer could:
 
 - Validate workflow files against `schemas/workflow.schema.json`.
