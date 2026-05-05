@@ -147,6 +147,14 @@ Use lowercase kebab-case ids and filenames. Keep the file name aligned with the 
 
 ## Future import behavior
 
+A validation script can check workflow files before any importer writes to the
+database:
+
+```bash
+cd backend
+npm run workflows:validate -- ../workflow-packs
+```
+
 A future importer could:
 
 - Validate workflow files against `schemas/workflow.schema.json`.
